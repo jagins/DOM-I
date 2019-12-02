@@ -47,6 +47,13 @@ navText.forEach((item, index) =>
     item.style.color = 'green';
   })
 
+  //create new anchor tag
+  let homeTag = document.createElement('a');
+  homeTag.textContent = 'Home';
+  homeTag.style.color = 'green';
+  let navTag = document.querySelector('nav');
+  navTag.appendChild(homeTag);
+
 //logo image
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
