@@ -44,6 +44,7 @@ let navText = document.querySelectorAll('a');
 navText.forEach((item, index) =>
   {
     item.textContent = siteContent["nav"][`nav-item-${index}`];
+    item.style.color = 'green';
   })
 
 //logo image
