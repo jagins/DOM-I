@@ -47,12 +47,20 @@ navText.forEach((item, index) =>
     item.style.color = 'green';
   })
 
-  //create new anchor tag
+  //home tag
   let homeTag = document.createElement('a');
   homeTag.textContent = 'Home';
+  homeTag.href = '#';
   homeTag.style.color = 'green';
   let navTag = document.querySelector('nav');
-  navTag.appendChild(homeTag);
+  navTag.prepend(homeTag);
+
+//contact tag
+let contactTag = document.createElement('a');
+contactTag.textContent = 'Contact';
+contactTag.href = '#';
+contactTag.style.color = 'green';
+navTag.appendChild(contactTag);
 
 //logo image
 let logo = document.getElementById("logo-img");
